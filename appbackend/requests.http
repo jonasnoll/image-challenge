@@ -1,0 +1,34 @@
+### Image Controller Requests
+
+# Get images with type and amount parameters
+GET http://localhost:3000/images?imageType=bear&amount=1
+
+###
+
+# Get cat images
+GET http://localhost:3000/images?imageType=cat&amount=10
+
+###
+
+# Get actor images
+GET http://localhost:3000/images?imageType=actor&amount=1
+
+###
+
+# Test validation - missing parameters
+GET http://localhost:3000/images
+
+###
+
+# Test validation - invalid amount (too high)
+GET http://localhost:3000/images?imageType=bear&amount=150
+
+###
+
+# Test validation - invalid image type
+GET http://localhost:3000/images?imageType=dog&amount=5
+
+###
+
+# Get latest stored image
+GET http://localhost:3000/images/latest

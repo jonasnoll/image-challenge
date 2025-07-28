@@ -1,0 +1,21 @@
+{
+  "name": "image-challenge",
+  "private": true,
+  "engines": {
+    "node": ">=22.17.1",
+    "npm": ">=10.0.0"
+  },
+  "workspaces": [
+    "appbackend",
+    "appfrontend"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "start:backend": "npm --workspace appbackend run start",
+    "start:frontend": "npm --workspace appfrontend run preview",
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}
