@@ -1,4 +1,4 @@
-# Camunda Image Microservice Challenge
+# Image Microservice Challenge
 
 This application can be run in two ways: **containerized** or **non-containerized**.
 
@@ -57,7 +57,7 @@ docker compose down -v
 
 Press `Ctrl+C` in the terminal where you ran `npm run start` to stop both services.
 
-### Automated Testing
+## Automated Testing
 
 Use Vitest for automated tests on the backend service.
 
