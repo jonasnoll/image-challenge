@@ -12,7 +12,7 @@ This application can be run in two ways: **containerized** or **non-containerize
 #### For Non-Containerized Setup
 
 - Node.js v22.17.1 (use `nvm use` if you have nvm installed to use the nvmrc file)
-- npm
+- npm v10.9.2
 
 ### Quickstart
 
